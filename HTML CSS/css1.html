@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        * {
+            color: blue;
+        }
+
+        /* div는 태그 선택자를 의미 */
+        p {
+            font-style: italic;
+        }
+        /* 클래스 선택자 : */
+        .accent {
+            border: 1px solid #333;
+            padding: 5px;
+        }
+        /* 그룹 선택자 : 여러 선택자를 하나로 묶음 (,)콤마로 구분 함 */
+        p, .accent {
+            color: darkblue;
+        }
+
+        .bg {
+            background-color: #ddd;
+        }
+        /* 아이디 선택자 : 태그에 id 키워드, #클래스명 { } */
+        #container {
+            width: calc(100vw - 60px);
+            /* height: calc(100vh - 60px); */
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: rosybrown;
+        }
+        /* 기본 속성 선택자 : */
+        a[href] {
+            color:aquamarine;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+        a[target="_blank"] {
+            color: yellow;
+        }
+        /* 자식 선택자 */
+        .box > p {
+            font-size: 1.2em;
+            color: red;
+            font-weight: 900;
+        }
+        /* 인접 형제 선택자 : + 기호를 사용해서 지정된 요소의 바로 다음 형제 요소를 선택 */
+        h1 + h2 {
+            color: chartreuse;
+        }
+        /* 일반 형제 선택자 : 특정 요소 이후에 나오는 모든 현재 요소 선택 */
+        h1 ~ h2 {
+            color: brown;
+        }
+        /* 가상 요소 선택자 : 요소의 특정 부분에 스타일 적용하는 방법 */
+        /* (:) 콜론으로 시작하여 요소의 내용이 아닌 요소의 특정 부분에 스타일을 적용 */
+        h1::before {
+            content: "★";
+            color: red;
+        }
+        h1::after {
+            content: "★";
+            color: blue;
+        }
+        /* 가상 클래스 선택자 : 요소의 상태를 이용해 선택자를 지정하는 방법 */
+        /* link : 한번도 방문하지 않은 링크일 때 선택 */
+        a:link {
+            color: orange;
+        }
+        /* visited : 한번 이라도 방문한 적이 있는 링크 */
+        a:visited {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class= "accent bg">레드향</h1>
+        <p>껍질에 붉은 빛이 돌아<span class="accent">레드향</span>이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3밴 크고, 과육이 붉고 통통하다.</p>
+    </div>
+    <a href="http://naver.com">네이버</a><br>
+    <a href="http://kakao.com" target="_blank">카카오</a>
+
+    <div class="box">
+        <p>아이폰 15 Pro Max</p>
+        <div>
+            <p>아이폰 15 mini</p>
+        </div>
+        <p>아이패드</p>
+    </div>
+
+    <div>
+        <h1>제목 1번 입니다.</h1>
+        <h2>제목 2번 입니다.</h2>
+        <h3>제목 3번 입니다.</h3>
+        <h2>제목 4번 입니다.</h2>
+    </div>
+    
+</body>
+</html>

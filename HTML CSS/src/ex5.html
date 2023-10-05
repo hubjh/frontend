@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 입력 양식 연습문제1</title>
+</head>
+<body>
+    <h1>예약 정보</h1>
+    <div>
+        <div style="width: 70px; float: left; margin-left: 40px">
+            <p style="text-align: left;">이름</p>
+            <p style="text-align: left;">휴대폰</p>
+            <p style="text-align: left;">이메일</p>
+            <button value="예약하기">예약하기</button>
+        </div>
+        <div style="float: left;">
+            <p><input type="text" style="text-align: right;" id="name"></p>
+            <p><input type="tel" style="text-align: right;" id="phone"></p>
+            <p><input type="email" style="text-align: right;" id="email"></p>
+        </div>
+    </div>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            width: 60px;
+	          display: inline-block;
+        }
+        div {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>예약정보</h1>
+    <form action="">
+        <div>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="phone">휴대폰</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+
+        <input type="submit" value="예약하기">
+
+    </form>
+</body>
+</html>
