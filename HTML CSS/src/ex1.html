@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 블록은 화면 줄박스단위로 인라인은 문자의 크기만큼-->
+    <title>HTML 요소 타입 (블록/인라인)</title>
+    <style>
+        .movie {
+            background-color: aqua;
+            color: darkblue;
+        }
+        .tv {
+            background-color: blueviolet;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 블록 요소는 해당 라인 전체를 차지 함-->
+    <p style="border: 2px solid blue;">p요소는 display 속성값이 블록인 요소 입니다.</p>
+    <span style="border: 2px solid red;">span요소는 display 속성값이 인라인인 요소 입니다.</span>
+    <div class="movie">   <!-- 단락을 구분해주는 요소 (이것 자체로는 별 기능은 없음) -->
+        <p>영화 소개</p>
+        <p style="background-color: lightgreen;">영화를 소개하는 페이지 입니다.</p>
+        <p><b style="border: 1px solid red;">글자를 강조</b>하는 볼드 태그는 인라인 속성 입니다.</p>
+    </div>
+    <div class="tv">
+        <p>TV 프로그램 소개</p>
+        <p>TV 프로그램을 소개하는 페이지 입니다.</p>
+    </div>
+    
+</body>
+</html>
