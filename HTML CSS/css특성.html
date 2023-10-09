@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "맑은 고딕";
+        }
+        .parent {
+            font-size: 16px;
+            font-weight: 100;
+            font-style: italic;
+            /* 키워드 표기법 : 150여개의 컬러 이름이 있음 */
+            background-color: blanchedalmond;
+        }
+        .child {
+            font-size: 120%;
+            font-weight: 400;
+            /* RGB */
+            background-color: rgb(255, 0, 0);
+        }
+        .child-to-child {
+            font-size: 120%;
+            font-weight: 900;
+            /* 4번째 값은 투명도를 의미 : 1에 가까우면 불투명, 0에 가까우면 투명 */
+            background-color: rgb(0, 0, 255, 0.5);
+        }
+        span {
+            font-variant: small-caps;
+        }
+        h3 {
+            /* display: inline; */
+            text-align: center;
+        }
+
+        .car-name {
+            text-align: justify;
+            text-decoration: line-through;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .test-text {
+            letter-spacing: 2px;
+            line-height: 1.7em;
+            font-size: 20px;
+            font-weight: bold;
+            color: darkred;
+            /* 가로거리 세로거리 번짐정도 색상*/
+            text-shadow: 10px 17px 0px #f00;
+        }
+        .shadow1 {
+            color: red;
+            text-shadow: 1px 1px black;
+        }
+        .shadow2 {
+            text-shadow: 5px 5px 3px;
+        }
+        .shadow3 {
+            text-shadow: 7px -7px 20px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>부모의 폰트 크기 입니다.</p>
+        <div class="child">
+            <p>자식의 폰트 크기 입니다.</p>
+            <div class="child-to-child">
+                <p>자식의 자식 폰트 크기 입니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="car-name">
+        <span>카이앤</span>
+        <span>파나메라</span>
+        <span>타이칸</span>
+    </div>
+
+    <a href="http://naver.com">네이버</a>
+
+    <!-- <p class="test-text">
+        행복의 한 쪽 문이 닫히면 다른 쪽 문이 열린다. 
+        <br/>
+        그러나 흔히 우리는 닫혀진 문을 오랫동안 보기  
+        <br/>
+        때문에 우리를 위해 열려 있는 문을 보지 못한다.
+    </p> -->
+    <p class="test-text">집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어</p>
+    <p class="shadow1">HTML</p>
+    <p class="shadow2">CSS</p>
+    <p class="shadow3">JavaScript</p>
+
+</body>
+</html>
