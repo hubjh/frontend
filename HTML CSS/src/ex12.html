@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- position 속성 : 요쇼의 위치를 지정하는 데 사용하는 속성 입니다. -->
+    <!-- static : 기본속성, 요소를 문서의 흐름에 따라 배치 -->
+    <!-- relative : 요소를 기본 위치(원래 위치)에서 상대적으로 이동 시킴 -->
+    <!-- absolute : 요소를 부모 요소 기준으로 절대적인 위치에 배치 -->
+    <!-- fixed : 요소를 뷰포트 기준으로 절대적인 위치에 배치 -->
+    <!-- sticky : 요소가 스크롤 되는 동안 상위 요소에 고정되도록 지정 -->
+    <style>
+        p {
+            margin: 0;
+        }
+        .container {
+            margin: 0;
+            width: 300px;
+            position: relative;
+            background-color: royalblue;
+        }
+        .box {
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            height: 100px;
+            border: 4px dashed red;
+            background-color: orange;
+        }
+        .red-box {
+            /* background-color: salmon; */
+            position: relative;
+        }
+        .green-box {
+            /* background-color: green; */
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            
+        }
+        .blue-box {
+            /* background-color: blue; */
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red-box">1</div>
+        <div class="box green-box">2</div>
+        <div class="box blue-box">3</div>
+
+    </div>
+
+    
+</body>
+</html>

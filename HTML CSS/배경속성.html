@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 배경 색상 : background-color : <색상값>  ( css 주석 )*/
+        /* background-image:  */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .bg {
+            /* 원본 이미지보다 2배 크게 설정 */
+            width : 320px;
+            height: 300px;
+            border: 1px solid black;
+            background-image: url('./images/coffee.jpg');
+            background-repeat: no-repeat;
+            /* size 속성 : auto(기본속성), cover(비율 기준으로 채우고 남는 부분을 날려버림), contain (비율을 맞추지만 남는부분은 남김) */
+            background-size: cover;
+            background-position: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- ( html 주석 ) -->
+    <div></div>
+    <div class="bg"></div>
+   
+    
+</body>
+</html>

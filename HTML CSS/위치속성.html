@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- position 속성 : 요쇼의 위치를 지정하는 데 사용하는 속성 입니다. -->
+    <!-- static : 기본속성, 요소를 문서의 흐름에 따라 배치 -->
+    <!-- relative : 요소를 기본 위치(원래 위치)에서 상대적으로 이동 시킴 -->
+    <!-- absolute : 요소를 부모 요소 기준으로 절대적인 위치에 배치 -->
+    <!-- fixed : 요소를 뷰포트 기준으로 절대적인 위치에 배치 -->
+    <!-- sticky : 요소가 스크롤 되는 동안 상위 요소에 고정되도록 지정 -->
+    <style>
+        body {
+            margin: 0;
+            height: 4000px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+            position: relative;
+            /* 어떤 레이아웃이 먼저 나오는가 relation 특성이 있어야 함*/
+            z-index: 1;     
+        }
+        .green-box {
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+        }
+        /* .blue-box {
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>
