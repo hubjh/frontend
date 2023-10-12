@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            width: fit-content;
+            padding: 5px;
+            height: auto;
+            display: grid;
+            gap: 20px;
+            font-size: 14px;
+            background-color: #ddd;
+            grid-template: auto;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 300px);
+            grid-template-areas: 
+                "item1 item2 item3"
+                "item4 item5 item6"
+                "item7 item8 ."
+            ;
+        }
+        .item {
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 0 10px;
+            background-color: white;
+            box-shadow: 2px 2px 2px #888;
+
+        }
+
+        .item img {
+            width: 10rem;
+            height: auto;
+            padding: 0 10px;
+        }
+        .picture-1 {
+            grid-area: item1;
+            /* background-color: red; */
+        }
+        .picture-2 {
+            grid-area: item2;
+            /* background-color: orange; */
+        }
+        .picture-3 {
+            grid-area: item3;
+            /* background-color: yellow; */
+        }
+        .picture-4 {
+            grid-area: item4;
+            /* background-color: green; */
+        }
+        .picture-5 {
+            grid-area: item5;
+            /* background-color: blue; */
+        }
+        .picture-6 {
+            grid-area: item6;
+            /* background-color: navy; */
+        }
+        .picture-7 {
+            grid-area: item7;
+            /* background-color: purple; */
+        }
+        .picture-8 {
+            grid-area: item8;
+            /* background-color: skyblue; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="grid-container">
+        <div class="item grid-icon">icon</div>
+        <div class="item grid-header">헤더 영역</div>
+        <div class="item grid-sidebar">사이드바 영역</div>
+        <div class="item grid-content">컨텐츠 영역</div>
+        <div class="item grid-footer">풋터 영역</div>
+    </div> -->
+    <div class="grid-container">
+        <div class="item picture-1">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-1.jpg" alt="cup-1">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-2">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-2.jpg" alt="cup-2">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-3">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-3.jpg" alt="cup-3">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-4">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-4.jpg" alt="cup-4">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-5">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-5.jpg" alt="cup-5">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-6">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-6.jpg" alt="cup-6">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-7">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-7.jpg" alt="cup-7">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+        <div class="item picture-8">
+            <p>
+                <h1>사진 제목</h1>
+                <img src="../cup-images/cup-7.jpg" alt="cup-7">
+                <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam. Neque mollitia esse blanditis facere.</p>
+            </p></div>
+    </div>
+    
+</body>
+</html>

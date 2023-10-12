@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            width: 700px;
+            display: grid;
+            gap: 2px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            grid-template-areas: 
+                "icon header header header"
+                "sidebar content content content"
+                "sidebar content content content"
+                "footer footer footer footer"
+            ;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-icon {
+            grid-area: icon;
+            background-color: royalblue;
+        }
+        .grid-header {
+            grid-area: header;
+            background-color: orangered;
+        }
+        .grid-sidebar {
+            grid-area: sidebar;
+            background-color: aqua;
+        }
+        .grid-content {
+            grid-area: content;
+            background-color: orange;
+        }
+        .grid-footer {
+            grid-area: footer;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item grid-icon">icon</div>
+        <div class="item grid-header">헤더 영역</div>
+        <div class="item grid-sidebar">사이드바 영역</div>
+        <div class="item grid-content">컨텐츠 영역</div>
+        <div class="item grid-footer">풋터 영역</div>
+    </div>
+    
+</body>
+</html>
