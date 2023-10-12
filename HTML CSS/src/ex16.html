@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        /* 주축 방향을 결정한다. */
+        /* flex-direction: row;
+        /* 아이템이 컨테이너 영역을 벗어날 때 어떻게 처리할지 결정 */
+        /* flex-wrap: wrap; */
+ 
+        flex-flow: row wrap;
+        /* 주축에 대한 정렬 방법 */
+        justify-content: space-evenly;
+        /* 교차축에 대한 정렬 */
+        align-items: center;
+
+        width: 700px;
+        height: 50px;
+        background-color: #333;
+        border: 1px solid black; 
+    }
+
+    .flex-item {
+        /* width: 80px;
+        height: 50px; */
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">메뉴1</div>
+        <div class="flex-item">메뉴2</div>
+        <div class="flex-item">메뉴3</div>
+        <div class="flex-item">메뉴4</div>
+        
+    </div>
+    
+</body>
+</html>
