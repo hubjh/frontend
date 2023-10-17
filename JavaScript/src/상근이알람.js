@@ -16,5 +16,4 @@ if (total_minute < 0) {
 }
 let result_hour = parseInt(total_minute / 60)
 let result_minute = total_minute % 60
-// document.write("알람 설정된 시간은 " + result_hour + "시" + result_minute+ "분 입니다.");
 document.write(`알람 설정된 시간은 ${result_hour}시 ${result_minute}분 입니다.`)
