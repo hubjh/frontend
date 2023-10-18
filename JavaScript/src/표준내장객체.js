@@ -40,3 +40,18 @@ console.log(text3);
 let str2 = "5";
 str2 = str2.padStart(4,0); // 0005
 console.log(str2);
+
+let str3 = "HELLO WORLD";
+console.log(str3.charCodeAt(0));
+
+let birthday = "1997-06-12";
+let arr2 = birthday.split("-"); // 하이픈(-)을 기준으로 문자열을 분리해서 배열로
+// console.log(arr2);   // ["1997", "06", "02"]
+
+// Number 객체 : 숫자와 관련된 작업을 할 때 사용하는 메소드
+// Number.parseFloat() 메소드
+console.log(Number.parseFloat("12"));           // 12
+console.log(Number.parseFloat("12.34"));        // 12.34
+console.log(Number.parseFloat("12문자열"));     // 12
+console.log(Number.parseFloat("12 34 56"));     // 12
+console.log(Number.parseFloat("문자열 56"));    // NaN
