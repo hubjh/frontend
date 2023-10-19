@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .img-size img {
+            width: 500px;
+
+        }
+        #text {
+            width: 500px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-size">
+        <button onclick="clickPicture()">
+            <img src="../images/잇지.jpeg" alt="잇지사진">
+        </button>
+        
+        <div id="text">
+            <h1>그룹 잇지</h1>
+            <p>팀명 'ITZY'는 '너희가 원하는 거 전부 있지? 있지!' 라는 뜻을 가지고 있으며,
+                정식 한글 표기법은 있지이다. 혹 영어명인 'ITZY'로만 들어본 사람들이 한글로는
+                어떻게 적는지 몰라 '잇지'라고 부르는 경우도 꽤 많이 있는데, '있지'라고 불러야
+                한다며 정정해주는것이 팬덤 잇지에게는 일상이 되었다.</p>
+            <button onclick="returnClick()">상세 설명 닫기</button>
+        </div>
+        <script>
+            function clickPicture() {
+                const textWrite = document.querySelector("#text");
+                textWrite.style.display = 'block';
+                
+            }
+            function returnClick() {
+                const textWrite = document.querySelector("#text");
+                textWrite.style.display = 'none';
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼경고</title>
+    <style>
+        #box {
+            width: 450px;
+            height: 300px;
+            border: 3px solid #bbb;
+            border-radius: 10px;
+        }
+        .white-text {
+            color: white;
+            width: 150px;
+            font-size: 20px;
+            border: 1px;
+            padding: 10px;
+            
+        }
+        .green {
+            background-color: green;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .purple {
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="green white-text" onclick="clickGreen()">Green</button>
+    <button class="orange white-text" onclick="clickOrange()">Orange</button>
+    <button class="purple white-text" onclick="clickPurple()">Purple</button>
+    <div>
+        <p id="box"></p>
+    </div>
+    <script src="./src/버튼경고.js"></script>
+
+</body>
+</html>
