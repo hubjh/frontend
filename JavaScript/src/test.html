@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Hello World!</h1>
+      <p>Welcome to my page.</p>
+    </div>
+    <script>
+        let doc = document.firstChild; // <!DOCTYPE html> 반환
+        console.log(doc);
+
+        let html = document.firstElementChild; // 첫번째 자식 노드 반환
+        console.log(html);
+    </script>
+  </body>
+</html>

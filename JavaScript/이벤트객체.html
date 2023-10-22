@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="https://www.naver.com">네이버 이동</a>
+    <a href="https://www.daum.net">다음 이동</a>
+    <script>
+      const aEls=document.querySelectorAll("a");
+      for(let i = 0; i <aEls.length; i++){
+            aEls[i].addEventListener("click", function(e) {
+            // 기본 이벤트 취소
+            e.preventDefault(); // 중요!! 많이 물어본다
+            alert("네이버 이동");
+        });
+      }
+    </script> -->
+
+    <form id="myForm">
+        <input type="text" name="username">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); // 폼 제출 기본 동작 막기
+          const username = form.elements.username.value;
+          // 입력된 사용자 이름을 사용하여 다른 작업 수행
+          document.querySelector("input").value = "";
+        });
+        
+        
+      </script>
+</body>
+</html>
