@@ -9,6 +9,7 @@ import EventHandler from "./EventHander";
 import FruitSelect from "./FruitSelect";
 import RadioButton from "./RadioButton";
 import Table from "./Table";
+import TableMap from "./TableMap";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <EventHandler /> */}
       {/* <FruitSelect /> */}
       {/* <RadioButton /> */}
-      <Table />
+      {/* <Table /> */}
+      <TableMap />
     </Fragment>
   );
 }
