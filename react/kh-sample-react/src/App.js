@@ -10,6 +10,12 @@ import FruitSelect from "./FruitSelect";
 import RadioButton from "./RadioButton";
 import Table from "./Table";
 import TableMap from "./TableMap";
+import CreateRef from "./CreateRef";
+import UserList from "./UserList";
+import TodoList from "./TodoList";
+import Counter from "./Hooks1";
+import UseStateEx1 from "./UseStateEx1";
+import MemberInfo from "./Hooks2";
 
 function App() {
   return (
@@ -27,7 +33,13 @@ function App() {
       {/* <FruitSelect /> */}
       {/* <RadioButton /> */}
       {/* <Table /> */}
-      <TableMap />
+      {/* <TableMap /> */}
+      {/* <CreateRef /> */}
+      {/* <UserList /> */}
+      {/* <TodoList /> */}
+      {/* <Counter /> */}
+      {/* <UseStateEx1 /> */}
+      <MemberInfo />
     </Fragment>
   );
 }

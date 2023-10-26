@@ -3,3 +3,31 @@
   color: darkgreen;
   font-weight: bold;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+h1 {
+  color: royalblue;
+}
+
+.title-name {
+  color: royalblue;
+  font-size: 2em;
+  background-color: orange;
+}
+
+.del-guide {
+  color: red;
+  font-style: italic;
+}
+
+li {
+  list-style: none;
+}
