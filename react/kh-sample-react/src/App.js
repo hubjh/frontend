@@ -14,8 +14,10 @@ import CreateRef from "./CreateRef";
 import UserList from "./UserList";
 import TodoList from "./TodoList";
 import Counter from "./Hooks1";
-import UseStateEx1 from "./UseStateEx1";
+import UseStateEx1 from "./useStateEx1";
 import MemberInfo from "./Hooks2";
+import Counter2 from "./Hooks3";
+import Average from "./Hooks4";
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
       {/* <TodoList /> */}
       {/* <Counter /> */}
       {/* <UseStateEx1 /> */}
-      <MemberInfo />
+      {/* <MemberInfo /> */}
+      {/* <Counter2 /> */}
+      <Average />
     </Fragment>
   );
 }
